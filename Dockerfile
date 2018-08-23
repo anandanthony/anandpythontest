@@ -16,4 +16,5 @@ ADD ./webapp /opt/webapp/
 WORKDIR /opt/webapp
 EXPOSE 2222 5000
 CMD ["python", "app.py"]
+ENTRYPOINT ["/bin/init_container.sh"]
 
